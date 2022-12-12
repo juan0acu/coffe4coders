@@ -22,6 +22,7 @@ import com.example.coffe4coders.ui.theme.Coffe4codersTheme
 fun customTextField(value:String,
                     placeholder: String,
                     enabled: Boolean = true,
+                    keyboardType: KeyboardType = KeyboardType.Text,
                     trailingIcon: @Composable (()-> Unit)? = null,
                     onGlobalPositioned: ((LayoutCoordinates)-> Unit)? = null,
                     onValueChange: (String) -> Unit ){
@@ -44,7 +45,7 @@ fun customTextField(value:String,
                             keyboardActions = KeyboardActions(onDone = {focusManager.clearFocus()}),
                             keyboardOptions = KeyboardOptions.Default.copy(
                                 imeAction = ImeAction.Done,
-                                keyboardType = KeyboardType.Text
+                                keyboardType = keyboardType
                             ),
                             trailingIcon = trailingIcon
 

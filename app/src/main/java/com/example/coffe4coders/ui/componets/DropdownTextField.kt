@@ -12,6 +12,7 @@ import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.toSize
+import androidx.compose.runtime.setValue
 
 @Composable
 fun dropdownTextField(suggestions:List<String>,
